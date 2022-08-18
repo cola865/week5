@@ -4,8 +4,176 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
-<h1>
-  這是一段話
-</h1>
-
+<main class="main-content flex-grow-1">
+    <div class="container px-0 py-0">
+        <div class="header d-flex align-items-center">
+            <h2 class="fs-4 fw-bold mb-0">Assignment</h2>
+            <div class="dropdown flex-grow-1 fw-bold">
+                <a class="dropdown-toggle px-0 py-0" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Courses I</a></li>
+                    <li><a class="dropdown-item" href="#">Courses II</a></li>
+                    <li><a class="dropdown-item" href="#">Courses III</a></li>
+                </ul>
+            </div>
+            <a href="#">
+                <span class="material-symbols-outlined">search</span>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined ms-3">notifications_active</span>
+            </a>
+        </div>
+        <div class="container px-0 py-0">
+            <div class="row">
+                <div class="col-4 pt-12">
+                    <div class="dropdown flex-grow-1 fw-bold mb-6">
+                        <a class="dropdown-toggle px-0 py-0 fw-bold" href="#" id="menuList" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            All (4)
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuList">
+                            <li class="dropdown-item">All</a></li>
+                            <li class="dropdown-item">Question</a></li>
+                            <li class="dropdown-item">HomeWork</a></li>
+                            <li class="dropdown-item">Other</a></li>
+                        </ul>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item pd-12" aria-current="true">
+                            <div class="title d-flex justify-content-between">
+                                <h3 class="mb-0 fz-12 lh-3">Chapter Assignment 2</h3>
+                                <span class="fz-12 lh-3">4 hrs ago</span>
+                            </div>
+                            <div class="letter-content d-flex justify-content-between">
+                                <p class="mb-0 fw-bold">Please check this file…</p>
+                                <span class="fz-12 lh-3 text-secondary">Emily Wang</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item" aria-current="true">
+                            <div class="title d-flex justify-content-between">
+                                <h3 class="mb-0 fz-12 lh-3">Chapter Assignment 1</h3>
+                                <span class="fz-12 lh-3">12 hrs ago</span>
+                            </div>
+                            <div class="letter-content d-flex justify-content-between">
+                                <p class="mb-0 fw-bold">My Homework</p>
+                                <span class="fz-12 lh-3 text-secondary">David Xu</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item" aria-current="true">
+                            <div class="title d-flex justify-content-between">
+                                <h3 class="mb-0 fz-12 lh-3">David Xu</h3>
+                                <span class="fz-12 lh-3">18 hrs ago</span>
+                            </div>
+                            <div class="letter-content d-flex justify-content-between">
+                                <p class="mb-0 fw-bold">Have a problem with this…</p>
+                                <span class="fz-12 lh-3 text-secondary">Tony Wei</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item" aria-current="true">
+                            <div class="title d-flex justify-content-between">
+                                <h3 class="mb-0 fz-12 lh-3">Tony Wei</h3>
+                                <span class="fz-12 lh-3">19 hrs ago</span>
+                            </div>
+                            <div class="letter-content d-flex justify-content-between">
+                                <p class="mb-0 fw-bold">Did I do it right?</p>
+                                <span class="fz-12 lh-3 text-secondary">Christina Lin</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8 pt-12">
+                    <div class="fz-12 lh-3 mb-6 text-end text-secondary">2 comments</div>
+                    <div class="letter-detail">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="fz-12 lh-3">Chapter Assignment 2 / HTML&CSS</span>
+                                    <p class="mb-0 fw-bold">Please check this file for me, thanks!</p>
+                                </div>
+                                <div>
+                                    <span class="material-symbols-outlined">more_vert</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="userCard d-flex align-items-center">
+                                    <img src="./assets/images//userphoto2.jpeg" alt="userimg">
+                                    <div class="userInfo ps-2">
+                                        <span class="userName fw-bold">Emily Wang</span><br>
+                                        <span class="fz-12 lh-3">10:38 AM (4 hours ago)</span>
+                                    </div>
+                                </div>
+                                <div class="ps-5" style="border-bottom:1px solid black">
+                                    <p class="fz-14 lh-21 mb-0">
+                                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                                        question: Why in the following code the height of the div is bigger than the
+                                        height of the img ? There is a gap below the image, but it doesn’t seems to be a
+                                        padding/margin. What is the gap or extra space below image?
+                                    </p>
+                                    <button type="button" class="btn btn-light border fw-bold d-flex my-3">
+                                        <span class="material-symbols-outlined">attach_file</span>HW-2-David.zip
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- <hr> -->
+                            <div class="card-body">
+                                <div class="userCard d-flex align-items-center">
+                                    <img src="./assets/images//userphoto.jpeg" alt="userimg">
+                                    <div class="userInfo ps-2 flex-grow-1">
+                                        <span class="userName fw-bold">Andy Chen (You)</span><br>
+                                        <span class="fz-12 lh-3">13:24 AM (1 hours ago)</span>
+                                    </div>
+                                    <div class="btn-group">
+                                        <span class="material-symbols-outlined nofill">grade</span>
+                                        <span class="material-symbols-outlined ms-4">edit</span>
+                                    </div>
+                                </div>
+                                <div class="ps-5">
+                                    <p class="fz-14 lh-21 mb-0">
+                                        Hi David, by default, an image is rendered inline, like a letter so it sits on
+                                        the same line that a, b, c and d sit on. There is space below that line for the
+                                        descenders you find on letters like g, j, p and q.                                       
+                                    </p>
+                                    <p class="my-5">You can:</p>
+                                    <ul>
+                                        <li>adjust the <span class="text-success">vertical-align</span> of the image to
+                                            position it elsewhere (e.g. the <span class="text-success">middle</span> )
+                                            or </li>
+                                        <li>change the <span class="text-success">display</span> so it isn’t inline.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer d-flex justify-content-between mt-3">
+                        <div class="pagination">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link link-dark border-0" href="#" aria-label="Previous">
+                                            <span class="material-symbols-outlined"
+                                                aria-hidden="true">chevron_left</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link link-dark border-0" href="#" aria-label="Next">
+                                            <span class="material-symbols-outlined" aria-hidden="true">
+                                                navigate_next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="button align-items-center">
+                            <button type="button" class="btn btn-outline-success pt-2 pb-2 me-3 ">Mark as read</button>
+                            <button type="button" class="btn btn-success pt-2 pb-2">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

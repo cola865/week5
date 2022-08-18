@@ -1,0 +1,29 @@
+.fz-12{
+    font-size: $indent * 1.5;
+}
+.fz-14{
+    font-size: 14px;
+}
+.lh-3{
+   line-height: $indent * 3;
+}
+
+.pt-12 {
+    padding-top: $indent * 2;
+}
+.pd-12{
+    padding: $indent * 1.5;
+}
+.mb-6{
+    margin-bottom: 6px;
+}
+.text-secondary{
+    color: $secondary-color !important;
+}
+.text-success{
+    color:$success-color !important;
+}
+
+.lh-21{
+    line-height: 21px;
+}
