@@ -1,9 +1,7 @@
 .main-nav{
     padding: 32px 80px 32px 32px;
-    // width: 296px;
     height: 100vh;
     background-color:#F8F9FA; 
-    // border-right: 1px solid black;  
 }
 .material-symbols-outlined {
     font-variation-settings:
@@ -41,6 +39,15 @@
     .email{
         font-size: 14px;
         line-height: 24px;
-        color: #6C757D;
+        color: $secondary-color;
+    }
+}
+.list-group{
+    .list-group-item{
+        &.active{
+            color: unset;
+            background-color: #F8F9FA;
+            border-color: #CED4DA;
+        }
     }
 }
